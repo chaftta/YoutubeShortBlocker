@@ -3,15 +3,21 @@
 	"name": "YouTube Shorts Blocker",
 	"version": "1.0",
 	"description": "YouTubeのショートコンテンツを非表示にします",
-	"permissions": ["activeTab"],
+	"permissions": [
+		"activeTab"
+	],
 	"content_scripts": [
-	  {
-		"matches": ["*://*.youtube.com/results*"],
-		"js": ["content.js"],
-		"run_at": "document_idle"
-	  }
+		{
+			"matches": [
+				"*://*.youtube.com/results*"
+			],
+			"js": [
+				"content.js"
+			],
+			"run_at": "document_idle"
+		}
 	],
 	"icons": {
-	  "48": "icon48.png",
+		"48": "icon48.png"
 	}
-  }
+}
